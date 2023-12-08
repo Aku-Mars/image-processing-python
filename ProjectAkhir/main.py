@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-# # Melakukan Adaptive Thresholding
+# Melakukan Adaptive Thresholding
 # for i in range(1, 11):
 #     image = cv2.imread(f'./Gambar/Sampel_{i}.jpg', 0)
 #     resize = cv2.resize(image, None, fx=0.25, fy=0.25)
@@ -27,17 +27,15 @@ import matplotlib.pyplot as plt
 #     plt.tight_layout()
 #     plt.show()
 
-# Melakukan deteksi tepi dengan metode Canny dan Sobel
 
+# Melakukan deteksi tepi dengan metode Canny dan Sobel
 # def edge_detection_canny(image):
 #     # Konversi ke gambar grayscale
 #     gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
 #     # Deteksi tepi menggunakan metode Canny
 #     edges = cv2.Canny(gray_image, 50, 150)
-
 #     return edges
-
 
 # def edge_detection_sobel(image):
 #     # Konversi ke gambar grayscale
@@ -50,14 +48,11 @@ import matplotlib.pyplot as plt
 #     # Magnitudo gradien dan arahnya
 #     magnitude = np.sqrt(sobel_x**2 + sobel_y**2)
 #     magnitude = np.uint8(magnitude)
-
 #     return magnitude
-
 
 # if __name__ == "__main__":
 #     # Membaca gambar
-#     image_path = './Gambar/Sampel_2.jpg'
-#     image = cv2.imread(image_path)
+#     image = cv2.imread('./Gambar/Sampel_2.jpg')
 #     resized_image = cv2.resize(image, None, fx=0.25, fy=0.25)
 
 #     # Deteksi tepi menggunakan metode Canny
@@ -82,11 +77,12 @@ import matplotlib.pyplot as plt
 #     plt.tight_layout()
 #     plt.show()
 
+
 # Metode template matching
-img = cv2.imread('./Gambar/Sampel_10.jpg', cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('./Gambar/Sampel_9.jpg', cv2.IMREAD_GRAYSCALE)
 assert img is not None, "file could not be read, check with os.path.exists()"
 img2 = img.copy()
-template = cv2.imread('./Gambar/Mobil_10.jpg', cv2.IMREAD_GRAYSCALE)
+template = cv2.imread('./Gambar/Mobil_9.jpg', cv2.IMREAD_GRAYSCALE)
 assert template is not None, "file could not be read, check with os.path.exists()"
 w, h = template.shape[::-1]
 
