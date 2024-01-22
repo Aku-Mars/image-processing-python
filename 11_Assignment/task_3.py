@@ -1,10 +1,8 @@
 # Memperlihatkan pixel-pixel dalam citra
-
 import cv2
 import numpy as np
 
-
-image = cv2.imread('haerin.jpg')
+image = cv2.imread('miaw.jpg')
 
 get_b = image[:, :, 0]
 get_g = image[:, :, 1]
@@ -22,8 +20,7 @@ for i in range(get_row):
         img_grey[i, j] = round(0.299 * get_r[i, j] +
                                0.587 * get_g[i, j] + 0.114 * get_b[i, j])
 
-x1, x2 = 10, 30
-y1, y2 = 10, 30
+x1, x2 = 25, 35
+y1, y2 = 25, 35
 
-# print(img_grey.flatten()[:100])
 print(img_grey[x1:x2, y1:y2])

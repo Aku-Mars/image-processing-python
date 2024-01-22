@@ -1,8 +1,5 @@
 # Melakukan Operasi Boolean
-
-# Senang bisa berkontribusi :D
 import cv2
-
 
 def operation_or(image1, image2):
     if image1.shape == image2.shape:
@@ -12,7 +9,6 @@ def operation_or(image1, image2):
         print("\nUkuran citra tidak cocok.")
         return None
 
-
 def operation_and(image1, image2):
     if image1.shape == image2.shape:
         hasil = cv2.bitwise_and(image1, image2)
@@ -20,7 +16,6 @@ def operation_and(image1, image2):
     else:
         print("\nUkuran citra tidak cocok.")
         return None
-
 
 def operation_xor(image1, image2):
     if image1.shape == image2.shape:
@@ -30,9 +25,8 @@ def operation_xor(image1, image2):
         print("\nUkuran citra tidak cocok.")
         return None
 
-
-img1 = cv2.imread("./Gambar2.jpeg")
-img2 = cv2.imread("./Gambar1.jpeg")
+img1 = cv2.imread("./3.png")
+img2 = cv2.imread("./4.png")
 
 if img1 is None or img2 is None:
     print("Tidak dapat membaca citra.")

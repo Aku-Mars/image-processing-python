@@ -1,9 +1,8 @@
 # Menampilkan histogram Citra
-
 import cv2
 import matplotlib.pyplot as plt
 
-image = cv2.imread('haerin.jpg')
+image = cv2.imread('miaw.jpg')
 
 color = ('b', 'g', 'r')
 plt.figure(figsize=(10, 5))

@@ -1,10 +1,9 @@
 # Menampilkan ekualisasi Citra
-
 import cv2
 import matplotlib.pyplot as plt
 import numpy as np
 
-image = cv2.imread('haerin.jpg')
+image = cv2.imread('miaw.jpg')
 
 
 def get_r(image):

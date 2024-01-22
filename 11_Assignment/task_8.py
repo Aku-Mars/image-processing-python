@@ -1,20 +1,13 @@
 # Melakukan operasi Aritmatika dua buah citra
-
 import cv2
-# import numpy as np
 
-img1 = cv2.imread('Gambar1.jpeg')
-img2 = cv2.imread('Gambar2.jpeg')
-
+img1 = cv2.imread('3.png')
+img2 = cv2.imread('4.png')
 
 if img1.shape == img2.shape:
 
     img1 = cv2.threshold(img1, 127, 255, cv2.THRESH_BINARY)[1]
     img2 = cv2.threshold(img2, 127, 255, cv2.THRESH_BINARY)[1]
-
-    # Menampilkan matrix img1 dan img2.
-    print(f"Matrix img1:\n{img1}")
-    print(f"Matrix img2:\n{img2}")
 
     # Melakukan operasi aritmatika.
     operator = str(input("Masukkan Operasi (+, -, *, /) : "))
@@ -32,7 +25,7 @@ if img1.shape == img2.shape:
     # Menyimpan citra hasil.
     print(img_hasil)
 
-    # Resize image to fit the screen
+    # Resize image
     cv2.namedWindow("Hasil :", cv2.WINDOW_NORMAL)
     cv2.imshow("Hasil :", img_hasil)
     cv2.waitKey(0)
