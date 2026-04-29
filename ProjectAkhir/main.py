@@ -79,10 +79,10 @@ import matplotlib.pyplot as plt
 
 
 # Metode template matching
-img = cv2.imread('./Gambar/Sampel_9.jpg', cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('D:\Coding\Tugas\image-processing-python\ProjectAkhir\Gambar\Sampel_4.jpg', cv2.IMREAD_GRAYSCALE)
 assert img is not None, "file could not be read, check with os.path.exists()"
 img2 = img.copy()
-template = cv2.imread('./Gambar/Mobil_9.jpg', cv2.IMREAD_GRAYSCALE)
+template = cv2.imread('D:\Coding\Tugas\image-processing-python\ProjectAkhir\Gambar\Mobil_4.jpg', cv2.IMREAD_GRAYSCALE)
 assert template is not None, "file could not be read, check with os.path.exists()"
 w, h = template.shape[::-1]
 

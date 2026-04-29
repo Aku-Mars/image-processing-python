@@ -32,7 +32,7 @@ def edge_detection_sobel(image):
 
 if __name__ == "__main__":
     # Membaca gambar
-    image_path = './Gambar/Sampel_2.jpg'
+    image_path = './ProjectAkhir/Gambar/Sampel_2.jpg'
     image = cv2.imread(image_path)
     resized_image = cv2.resize(image, None, fx=0.25, fy=0.25)
 
